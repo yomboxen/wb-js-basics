@@ -399,7 +399,11 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash() {
-  
+  if (cookieType === "raisin") {
+    return "throw in trash"
+  } else {
+    return "eat"
+  }
 }
 
 ////////////////// PROBLEM 28 ////////////////////
@@ -414,7 +418,11 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore() {
-  // Code here
+  if (myTeamScore > yourTeamScore) {
+    return "we are the champions"
+  } else {
+    return ":("
+  }
 }
 
 ////////////////// PROBLEM 29 ////////////////////
@@ -432,7 +440,13 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation() {
-  // Code here
+  if (age >= 3 && age <= 7) {
+    return "tricycle"
+  } else if (age >= 8 && age <= 15) {
+    return "bicycle"
+  } else if (age > 15) {
+    return "car"
+  }
 }
 
 ////////////////// PROBLEM 30 ////////////////////
@@ -450,7 +464,11 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream() {
-  // Code here
+  if (temp === "hot" && cash) {
+    return "Get Ice Cream!"
+  } else {
+    return "Save up for another day."
+  }
 }
 
 ////////////////// PROBLEM 31 ////////////////////
@@ -467,7 +485,9 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime() {
-  // Code here
+  if (!chores || !work) {
+    return "free time!"
+  }
 }
 
 ////////////////// PROBLEM 32 ////////////////////
