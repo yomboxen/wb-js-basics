@@ -506,7 +506,9 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash() {
-  // Code here
+  if (currentSpeed === "fast" && !brakes) {
+    return crash = true
+  }
 }
 
 ////////////////// PROBLEM 33 ////////////////////
